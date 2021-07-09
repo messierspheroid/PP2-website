@@ -1,0 +1,115 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+{% endblock %}
+
+{% block title %}Chad Bjornberg - Chemist and Programmer/Developer{% endblock %}
+
+{% block content %}
+<div class="container">
+
+  <div class="jumbotron text-center">
+    <div class="header-container">
+      <h1>Chad Bjornberg</h1>
+      <h2>Interactive Resume</h2>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="profile-container">
+    <h2>Profile</h2>
+      <h3>I'm a Biochemist and Self-taught Programmer/Developer</h3>
+        <h2>About me</h2>
+          <p>
+            I am a research oriented chemist with a love for optimization,
+            productivity and what a large amount of data may reveal. I have
+            a deep experience with research concerning bio-waste polymers
+            (e.g., chitosan). I my past role as an R&D chemist, I have
+            become proficient in research reasoning, documentation, project
+            management, multi-tasking and collaboration. I am a team player
+            and quick learner.
+
+            I have finished (but still learning) a three month Udemy python
+            course that I intend on integrating into my everyday life.
+          </p>
+        <h2>Details</h2>
+          <p>
+            <strong>Name:</strong><br>
+            Chad Everett Bjornberg<br>
+            <strong>Age:</strong><br>
+            {{ age }} years<br>
+            <strong>Location:</strong><br>
+            San Francisco Bay Area, CA<br>
+            <a class="btn btn-primary" href="https://linkedin.com/in/chad-bjornberg"
+               role="button">LinkedIn</a>
+            <a class="btn btn-primary" href="https://github.com/messierspheroid"
+               role="button">GitHub</a>
+            <a class="btn btn-primary" href="https://twitter.com/bjornberg_c">Twitter</a>
+            <a class="btn btn-primary" href="mailto:chad.bjornberg@gmail.com">Email</a>
+          </p>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="past-experiences">
+    <h2>Past Experiences</h2>
+      <h3>Education</h3>
+        <p>
+          <strong>Udemy</strong><br>
+          Course - 100 Days of Code (The Complete Python Pro BootCamp)<br>
+          Through the lessons and projects of this course I became proficient
+          with the basics as well as many commonly used modules. With the help
+          of Jinja templating and Flask, I gained a familiarity with web
+          development as well as an introduction to SQLite/SQLAlchemy databases.
+          I am also currently still sharpening my skills taking other online
+          classes to satisfy my constant urge to learn new skills.<br>
+          <strong>University of Nevada, Las Vegas</strong><br>
+          Bachelors - Major in Biochemistry, minor in Psychology<br>
+          <strong>College of Southern Nevada, Charleston Campus</strong><br>
+          Associates - Biological Sciences
+        </p>
+      <h3>Roles</h3>
+        <p>
+          <strong>ViaeX Technologies, Inc.</strong><br>
+          R&D Scientist<br>
+          Prepared/Synthesized biopolymer formulations based on prior research literature. Biopolymer
+          liquid solutions were then used for electrospunmembranes, bead deposition or thin-film
+          casting. I carried out a variety of relevant chemical/physical tests to monitor material
+          characteristics for proposed projected products. Overall position was to produce a product
+          for water and air filtration as well as compostable packaging for general products from
+          biowaste materials.<br>
+          <strong>University of Nevada, Las Vegas</strong>
+          Microbiology Lab - Undergraduate Teaching Assistant<br>
+          Main responsibilities: preparing growth media (nutrient, differential, selective, etc.) in
+          a precise manner; practicing aseptic techniques; plating and inoculating bacteria for class;
+          preparing microbiology laboratory for each class session. Highly proficient in utilizing
+          laboratory tools (autoclave, hot water bath, hot plate, etc.).<br>
+          <strong>University of Nevada, Las Vegas</strong>
+          Dr. Jun Yon Kang Organic Chemistry Lab - Undergraduate Organic Chemistry Researcher<br>
+          My role in this research project included synthesizing starting materials and proprietary
+          reagents for all products in publication. In this study, my mentor and I proved to develop
+          highly efficient and practical phospha-Michael reaction of maleimides with NHP-thioureas
+          without the need for any additives or catalysts. This research publication resulted in the
+          sale of the NHP-thiourea, proving its commercial viability.
+        </p>
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="abilities">
+    <h2>Abilities</h2>
+
+  </div>
+
+</div>
+
+{% endblock %}
